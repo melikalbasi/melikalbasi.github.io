@@ -1,244 +1,100 @@
-.header {
-     /* Box-model */
-     max-width: 100%;
-     margin: 0;
-     background-color: white;
-     border-style: solid;
-     border-top: #333;
-     border-width: 1px;
-     border-color: #333;
-}
-
-.name {
-    /* Box-model */
-    padding: 18px 10px 18px 10px;
-  
-    /* Positioning */
-    margin: 0;
-    margin-left: 20%;
-    font-size: 24px;
-  
-    /* Typography */
-    color: white;
-    text-align: left;
-  
-    /* Visual */
-    background: #4aaaa5;
-    width: 190px;
-  }
-
-
-.tabs {
-    max-width: 100%;
-    position: relative;
-    font-family: Arial, Helvetica, sans-serif;
-    float: right;
-    margin-top: -50px;
-    margin-right: 20%;
-    text-decoration: none;
-}
-
-.tabs a {
-    text-decoration: none;
-    color: gray;
-
-}
-
 .content {
-    margin: 60px 250px;
-    margin-bottom: 200px;
-    position: absolute;
-    align-content: center;
-    width: 960px;
-    background: white;
-    background-size: cover;
-    border-color: #dddddd;
-    flex-wrap: wrap;
-    line-height: 30px;
-    border-style: solid;
-    border-color: lightgray;
-    border-width: 1px;
-    
-}
-
-body {
-    /* Box-model */
-    padding: 0px;
-    text-align: left;
-  
-    /* Positioning */
-    margin: 0;
-    font-family: Georgia, "Times New Roman", Times, serif;
-  
-    /* Typography */
-    font-size: 14px;
-    line-height: 150%;
-    color: #333;
-  
-    /* Visual */
-    background-image: url("topography.png");
-    
-  }
-  
-  .nav {
-    position: relative;
-    background: #777777;
-    display: inline;
-    width: 100%;
-  }
-
-
-  
-.about {
-    /* About Me */
-    padding: 10px;
-    margin-left: 5px;
-    color: #4aaaa5;
-
-}
-
-  
-  .photo {
-    /* float: left; */
-    background: white;
-    background-size: cover;
-    margin: 10px;
-    float: left;
-  }
-
-
-
-
-hr {
-    margin: 15px;
-}
-
-
-.tech h3 {
-        /* Box-model */
-        padding: 18px 10px 18px 10px;
-  
-        /* Positioning */
-        margin: 0;
-        margin-left: 20px;
-        font-size: 24px;
-        z-index: 10;
-      
-        /* Typography */
-        color: white;
-        text-align: left;
-      
-        /* Visual */
-        background: #4aaaa5;
-        width: 340px;
-}
-
-.tech img {
-    z-index: 1;
-         /* Box-model */
-         padding: 18px 10px 18px 10px;
-  
-         /* Positioning */
-         margin: 0;
-         margin-left: 20px;
-         font-size: 24px;
-         z-index: 10;
-       
-         /* Typography */
-         color: white;
-         text-align: left;
-}
-
-.tech {
-    background: red;
-    display: inline;
-    border: 2px solid blue;
-}
-
-
-
-.project {
-    clear: both;
-    display: inline-table;
-    width: 33%;
-    margin: 10px;
-}
-
-.project h2 {
-    clear: both;
-    float: left;
-    position: relative;
-    bottom: 100px;
-    color: white;
-    background: #4aaaa5B1;
-    padding: 15px 5px;
-    width: 100%;
-    text-align: center;
-}
-
-
-.content {
-	width: 960px;
+    max-width: 500px;
     margin: auto;
-    height: 560px;
-    margin: 60px 250px;
-    margin-bottom: 200px;
-    position: absolute;
-    align-content: center;
-    width: 960px;
-    background: white;
-    background-size: cover;
-    border-color: #dddddd;
+  }
+
+/* #logo {
+    width: 380px;
+} */
+
+.row {
+    display: flex;
     flex-wrap: wrap;
-    line-height: 30px;
-    border-style: solid;
-    border-color: lightgray;
-    border-width: 1px;
-}
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 0px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .portfolio {
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    width: 270px; /* Set a small width */
+    box-shadow: 2px 2px grey;
+  }
+  
+  /* Add a hover effect (blue shadow) */
+  .portfolio:hover {
+    box-shadow: 0 0 2px 1px rgb(18, 98, 179);
+    opacity: 0.5;
+  }
 
 
-.submit {
-    background-color: #4aaaa5;
+  /* Dropdown Button */
+.dropbtn {
+    background-color: rgb(78, 144, 199);
+    color: white;
+    padding: 16px;
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
     border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: white; 
-    color: black; 
-    border: 2px solid #4aaaa5;
-}
-
-.submit:hover {
-    background-color: #4aaaa5;
-    color: white;
-}
-
-input, textarea {
-    width: 40%;
-}
-input {
-    height: 30px;
-}
-
-
-
-.footer { 
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    font-family: 'Poiret One', cursive;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
-    margin-bottom: 0%;
-    background: #4b4a4a;
-    text-align: center;
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(170, 170, 170);
-    clear: both;
-    padding: 30px;
-    position: fixed;
-    bottom: 0;
-}
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: black;}
