@@ -1,3 +1,8 @@
+h5 {
+  font-family: 'Poiret One', cursive;
+  font-weight: 700;
+}
+
 .content {
   max-width: 500px;
   margin: auto;
@@ -6,6 +11,10 @@
 /* #logo {
   width: 380px;
 } */
+
+a {
+  color: darkblue;
+}
 
 .row {
   display: flex;
@@ -57,7 +66,7 @@
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: rgb(78, 144, 199);
+  background-color:darkblue;
   color: white;
   padding: 16px;
   font-family: 'Poiret One', cursive;

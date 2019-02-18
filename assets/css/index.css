@@ -12,6 +12,10 @@ h5 {
   width: 380px;
 } */
 
+a {
+  color: darkblue;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
